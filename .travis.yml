@@ -12,3 +12,7 @@ deploy:
   provider: heroku
   app: "kresh-continuous-integration"
   api_key: "6facb0fd-cc4d-4f33-85b4-2a3301fe2416"
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
