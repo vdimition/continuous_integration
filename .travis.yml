@@ -10,7 +10,7 @@ branches:
 
 deploy:
   provider: heroku
-  app: "https://kresh-continuous-integration.herokuapp.com/"
+  app: "continuous_integration"
   api_key:
     secure: "6f8ea26e-bced-43eb-8cd4-e41e4a0c91f2"
 
