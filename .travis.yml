@@ -10,6 +10,10 @@ branches:
 
 deploy:
   provider: heroku
-  app: "kresh-continuous-integration"
+  app: "https://kresh-continuous-integration.herokuapp.com/"
   api_key:
     secure: "6f8ea26e-bced-43eb-8cd4-e41e4a0c91f2"
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
