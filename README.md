@@ -1,3 +1,9 @@
+[build-badge](https://img.shields.io/travis/vdimition/continuous_integration/master.png?style=flat-square)
+[build](https://travis-ci.org/vdimition/continuous_integration)
+
+[coveralls-badge](https://img.shields.io/coveralls/vdimition/continuous_integration/master.png?style=flat-square)
+[coveralls](https://coveralls.io/github/vdimition/continuous_integration)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
